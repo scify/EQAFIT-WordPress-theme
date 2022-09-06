@@ -1,0 +1,36 @@
+@import "_variables_and_functions";
+@import "_utilities";
+
+// δεν το βλεπει, το χω βαλει προσωρινα στο style.scss
+.all-experts {
+    display: flex;
+    flex-wrap: wrap;
+
+    .expert {
+        width: 210px;
+        .image-container {
+            img {
+                width: 200px;
+                height: 220px;
+                object-fit: cover;
+                object-position: top;
+            }
+
+            h4 {
+                font-size: rem(18px);
+                color: color(color02);
+                font-weight: bold;
+            }
+
+            .role {
+                font-size: rem(14px);
+                font-weight: bold;
+                min-height: 46px;
+            }
+
+            .university {
+                font-size: rem(14px);
+            }
+        }
+    }
+}

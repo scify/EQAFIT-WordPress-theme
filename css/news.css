@@ -1,0 +1,354 @@
+/* Posts and pages
+--------------------------------------------- */
+.sticky {
+    display: block;
+}
+
+.post,
+.page {
+    margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+    display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+    margin: 1.5em 0 0;
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+/* Comments
+--------------------------------------------- */
+.comment-content a {
+    word-wrap: break-word;
+}
+
+.bypostauthor {
+    display: block;
+}
+
+/* Widgets
+--------------------------------------------- */
+.widget {
+    margin: 0 0 1.5em;
+}
+
+.widget select {
+    max-width: 100%;
+}
+
+/* Media
+--------------------------------------------- */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+    display: inline-block;
+}
+
+/* Captions
+--------------------------------------------- */
+.wp-caption {
+    margin-bottom: 1.5em;
+    max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+
+.category_main #secondary{
+    width:300px;
+}
+
+.category_main .category_holder{
+    -webkit-box-flex:1;
+    -ms-flex:1;
+    flex:1;
+    padding-right:40px;
+}
+
+.category_main{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding:100px 0px 120px;
+}
+
+.category_image img{
+    max-height:400px;
+}
+
+.category_content{
+    padding:45px 0px 60px;
+}
+
+.category_date_inner{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    padding-bottom:30px;
+}
+.category_date{
+    padding-right:5px;
+    color: #333333;
+}
+
+.category_name,
+.category_name a {
+
+    color: #0088FF;
+}
+
+.category_name,
+.category_name a,
+.category_date{
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: capitalize;
+
+}
+
+.category_name a:hover{
+    color: #9d9d9d;
+}
+
+.category_title a{
+    color: #333333;
+    font-size:28px;
+    line-height:47px;
+    letter-spacing:-0.6px;
+    font-weight: bold;
+}
+
+.category_title{
+    padding-bottom:30px;
+}
+
+.category_text_content{
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: none;
+    color: #474747;
+    padding-bottom:40px;
+}
+
+.supsystic-social-sharing .sharer-flat {
+
+    width:25px!important;
+    height: 25px!important;
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+html body .supsystic-social-sharing.supsystic-social-sharing-spacing a.social-sharing-button{
+    padding:0px!important;
+}
+
+.supsystic-social-sharing.supsystic-social-sharing-content-align-left{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+}
+
+
+.paginate_cat_holder{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.paginate_cat_holder span,
+.paginate_cat_holder a
+{
+    font-size:22px;
+    padding:0px 5px;
+}
+
+.paginate_cat_holder a{
+    color: #153c5c;
+}
+
+.paginate_cat_holder span{
+    color:rgb(166, 166, 166);
+}
+
+.wp-block-group__inner-container h2 {
+    font-size: 15px;
+    letter-spacing: 0px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: capitalize;
+    background-color: #CAE5E0;
+    margin-bottom: 18px;
+    padding: 12px 18px;
+    color: #333333;
+    margin-top:0px;
+    text-align: center;
+}
+
+.widget ul{
+    margin:0px;
+    list-style: none;
+    padding:0px;
+}
+
+.widget ul li a{
+    color: #474747;
+    font-size:16px;
+    line-height:23px;
+}
+
+.widget ul li a:hover {
+    color: #8BC5F8;
+}
+
+.tagcloud a{
+    font-size: 13px !important;
+    letter-spacing: 0px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #153c5c;
+    border: 1px solid #a7a6a6;
+    padding: 0 15px;
+    line-height: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-bottom:5px;
+}
+
+.tagcloud a:hover {
+    color: #fff;
+    border-color: #9d9d9d;
+    background-color: #9d9d9d;
+}
+
+.tagcloud a:hover {
+    color: #fff;
+    border-color: #9d9d9d;
+    background-color: #9d9d9d;
+}
+
+
+@media screen and (max-width: 900px) {
+
+
+    .category_main #secondary {
+        width: 200px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .category_main{
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+        -ms-flex-direction:column;
+        flex-direction:column;
+    }
+
+    .category_main .category_holder {
+        width:100%;
+        padding-right: 0px;
+    }
+
+    .category_main #secondary {
+        width: 100%;
+        margin-top:50px;
+    }
+
+
+}
+
+
+.search-results .page-title{
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 0px;
+    color: #060b59;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding-top: 200px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .search-results .page-title{
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .search-results .category_main {
+        padding: 40px 0px 80px;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .search-results .page-title{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+
+}

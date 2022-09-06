@@ -1,0 +1,51 @@
+@import "_variables_and_functions";
+@import "_utilities";
+
+
+h1 {
+    span{
+        font-weight: 400;
+    }
+}
+.coming-soon {
+    background-color: color(color03);
+    background-image: url(../images/icon1.svg), url(../images/icon2.svg);
+
+    background-position: 5% 60%, 90% 41%;
+    background-repeat: no-repeat;
+
+    a {
+        color: #ffcc56;
+        text-decoration: underline;
+        font-weight: 600;
+
+        &:hover {
+            font-weight: 800;
+        }
+
+        &.btn {
+            color: #ffffff;
+            &,
+            &:link,
+            &:visited {
+                background-color: color(color07);
+                color: ffffff;
+                border: none;
+                outline: 2px solid color(color07);
+                min-width: rem(289px);
+                padding: 0.8rem 1.5rem;
+                font-weight: 700;
+      
+                text-decoration: none;
+            }
+
+            &:hover {
+                color: color(color07);
+                background-color: transparent;
+            }
+            &:focus {
+                outline: 2px solid #1c9e75;
+            }
+        }
+    }
+}

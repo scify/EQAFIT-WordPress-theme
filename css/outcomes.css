@@ -1,0 +1,96 @@
+/*
+Here we override our variables
+*/
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+h4 {
+  color: #0088FF;
+  font-weight: bold;
+}
+
+.deliverable-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 430px) {
+  .deliverable-boxes {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.deliverable-boxes .deliverable-box-blue-area {
+  background-color: #E1F5FF;
+  height: 328px;
+  width: 319px;
+  position: relative;
+  text-align: center;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 430px) {
+  .deliverable-boxes .deliverable-box-blue-area {
+    width: 253px;
+    height: 254px;
+  }
+}
+
+.deliverable-boxes .deliverable-box-blue-area .circle {
+  background-color: white;
+  width: 165px;
+  height: 165px;
+  border-radius: 100%;
+  display: inline-block;
+  text-align: center;
+  background-image: url(../images/eqafit-logo-outcomes.png);
+  background-repeat: no-repeat;
+  background-position: 58% 53%;
+}
+
+@media screen and (max-width: 430px) {
+  .deliverable-boxes .deliverable-box-blue-area .circle {
+    width: 254px;
+    height: 226px;
+    background-position: 50% 1%;
+  }
+}
+
+.deliverable-boxes .deliverable-box-blue-area p {
+  color: #0088FF;
+  font-weight: bold;
+  max-width: 228px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.deliverable-boxes a {
+  color: #333333;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=outcomes.css.map */

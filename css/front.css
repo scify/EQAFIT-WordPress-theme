@@ -1,0 +1,411 @@
+/*
+Here we override our variables
+*/
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
+}
+
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+.section-main-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-main-title__text {
+  max-width: 470px;
+}
+
+@media screen and (max-width: 1120px) {
+  .section-main-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.section-welcome,
+.section-basic-objectives {
+  background-image: -webkit-gradient(linear, left top, right top, from(#0088ff), to(#1c9e75));
+  background-image: linear-gradient(to right, #0088ff, #1c9e75);
+  color: white;
+  padding: 100px 0;
+}
+
+.section-welcome a {
+  color: #ffcc56;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.section-welcome a:hover {
+  font-weight: 800;
+}
+
+.section-welcome a.btn, .section-welcome a.btn:link, .section-welcome a.btn:visited {
+  background-color: white;
+  color: black;
+  border: none;
+  outline: 2px solid white;
+  min-width: 18.0625rem;
+  padding: 0.8rem 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.section-welcome a.btn:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.section-welcome a.btn:focus {
+  outline: 2px solid #1c9e75;
+}
+
+.section-about {
+  background-position: -10% 14%;
+  background-image: url(../images/section-about-image.png);
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1212px) {
+  .section-about {
+    background-image: none;
+  }
+}
+
+.section-about h2 {
+  border: 3px solid #0088FF;
+  background-color: #F9F9F9;
+  display: inline-block;
+  padding: 30px 150px;
+  min-width: 600px;
+  text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+  .section-about h2 {
+    min-width: 300px;
+    padding: 10px 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .section-about h2 {
+    min-width: 256px;
+    padding: 10px 50px;
+  }
+}
+
+.section-target-groups .all-target-groups {
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+@media screen and (max-width: 530px) {
+  .section-target-groups .all-target-groups {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.section-target-groups .all-target-groups .target-group .target-group-box {
+  width: 400px;
+  height: 280px;
+  background-color: #E1F5FF;
+  color: #0088FF;
+  text-align: center;
+  margin-right: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-target-groups .all-target-groups .target-group .target-group-box h5 {
+  min-height: 64px;
+  max-width: 230px;
+}
+
+.section-target-groups .all-target-groups .target-group .target-group-box .fa-chevron-up {
+  display: none;
+}
+
+.section-target-groups .all-target-groups .target-group.active .target-group-box {
+  background-color: #0088FF;
+  color: white;
+  height: 273px;
+}
+
+.section-target-groups .all-target-groups .target-group.active .target-group-box .fa-chevron-down {
+  display: none;
+}
+
+.section-target-groups .all-target-groups .target-group.active .target-group-box .fa-chevron-up {
+  display: block;
+  margin-top: 50px;
+}
+
+.section-target-groups .all-target-groups .target-group-impacts {
+  border: 3px solid #0088FF;
+  padding: 40px 30px;
+  display: none;
+  position: absolute;
+  background: white;
+  min-height: 281px;
+  left: 0;
+  right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-target-groups .all-target-groups .target-group-impacts p {
+  max-width: 970px;
+}
+
+.section-target-groups .active .target-group-impacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-basic-objectives ol {
+  list-style: none;
+  margin-left: 10%;
+}
+
+.section-basic-objectives ol li {
+  margin: 0 0 0.5rem 0;
+  max-width: 910px;
+}
+
+.section-basic-objectives ol li span {
+  background-color: white;
+  color: #0088FF;
+  font-weight: bold;
+  width: 30px;
+  height: 29px;
+  border-radius: 100%;
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+  margin-left: -40px;
+}
+
+.section-the-challenge {
+  background-color: #E1F5FF;
+  padding: 100px 0;
+  background-position: 100% 14%;
+  background-image: url(../images/section-challenge-image.png);
+  background-repeat: no-repeat;
+}
+
+.section-the-challenge h1,
+.section-the-challenge span {
+  color: #0088FF;
+}
+
+.section-the-challenge span {
+  border-bottom: 3px solid #0088FF;
+}
+
+.section-key-concepts .accordion-item,
+.section-key-concepts .accordion-item:first-child,
+.section-key-concepts .accordion-item:last-child {
+  max-width: 1250px;
+  border: 3px solid #1C9E75;
+}
+
+.section-key-concepts .accordion-item .key-title button,
+.section-key-concepts .accordion-item:first-child .key-title button,
+.section-key-concepts .accordion-item:last-child .key-title button {
+  color: #1C9E75;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.section-key-concepts .accordion-item .key-title button b,
+.section-key-concepts .accordion-item:first-child .key-title button b,
+.section-key-concepts .accordion-item:last-child .key-title button b {
+  margin-left: 10px;
+}
+
+.section-key-concepts .accordion-item .key-title .fa-minus-circle,
+.section-key-concepts .accordion-item:first-child .key-title .fa-minus-circle,
+.section-key-concepts .accordion-item:last-child .key-title .fa-minus-circle {
+  display: initial;
+  color: #CAE5E0;
+}
+
+.section-key-concepts .accordion-item .key-title .fa-plus-circle,
+.section-key-concepts .accordion-item:first-child .key-title .fa-plus-circle,
+.section-key-concepts .accordion-item:last-child .key-title .fa-plus-circle {
+  display: none;
+}
+
+.section-key-concepts .accordion-item .key-title .accordion-button::after,
+.section-key-concepts .accordion-item:first-child .key-title .accordion-button::after,
+.section-key-concepts .accordion-item:last-child .key-title .accordion-button::after {
+  display: none;
+}
+
+.section-key-concepts .accordion-item .key-title .accordion-button,
+.section-key-concepts .accordion-item:first-child .key-title .accordion-button,
+.section-key-concepts .accordion-item:last-child .key-title .accordion-button {
+  background-color: white;
+}
+
+.section-key-concepts .accordion-item .key-title .accordion-button:focus,
+.section-key-concepts .accordion-item:first-child .key-title .accordion-button:focus,
+.section-key-concepts .accordion-item:last-child .key-title .accordion-button:focus {
+  display: none;
+}
+
+.section-key-concepts .accordion-item .key-title .collapsed .fa-minus-circle,
+.section-key-concepts .accordion-item:first-child .key-title .collapsed .fa-minus-circle,
+.section-key-concepts .accordion-item:last-child .key-title .collapsed .fa-minus-circle {
+  display: none;
+}
+
+.section-key-concepts .accordion-item .key-title .collapsed .fa-plus-circle,
+.section-key-concepts .accordion-item:first-child .key-title .collapsed .fa-plus-circle,
+.section-key-concepts .accordion-item:last-child .key-title .collapsed .fa-plus-circle {
+  display: initial;
+  color: #1C9E75;
+}
+
+.section-key-concepts .accordion-item .key-title .collapsed b,
+.section-key-concepts .accordion-item:first-child .key-title .collapsed b,
+.section-key-concepts .accordion-item:last-child .key-title .collapsed b {
+  color: #1C9E75;
+}
+
+.section-key-concepts .accordion-body {
+  max-width: 1080px;
+  margin-left: 25px;
+}
+
+.section-project-roadmap .roadmap-bck {
+  background-color: #F9F9F9;
+}
+
+.section-project-roadmap .roadmap-bck .timeline-main-title {
+  display: none;
+}
+
+.section-project-roadmap .roadmap-bck .timeline-post.odd .timeline-content.clearfix.aos-init.aos-animate {
+  -webkit-box-shadow: 0px 10px 10px -15px #111;
+          box-shadow: 0px 10px 10px -15px #111;
+  border-right: 3px solid #E1F5FF;
+}
+
+.section-project-roadmap .roadmap-bck .timeline-post.even .timeline-content.clearfix.aos-init.aos-animate {
+  -webkit-box-shadow: 0px 10px 10px -15px #111;
+          box-shadow: 0px 10px 10px -15px #111;
+  border-left: 3px solid #E1F5FF;
+}
+
+.section-project-roadmap .roadmap-bck .cool-timeline.white-timeline .timeline-post.odd .timeline-content .content-title:before,
+.section-project-roadmap .roadmap-bck .cool-timeline.white-timeline .timeline-post.even .timeline-content .content-title:before {
+  border-left-color: #E1F5FF;
+}
+
+.section-project-roadmap .roadmap-bck .cool-timeline.white-timeline .timeline-post.odd .timeline-meta .meta-details,
+.section-project-roadmap .roadmap-bck .ctl_road_map_wrp li.odd .ctl-story-year,
+.section-project-roadmap .roadmap-bck .ctl_road_map_wrp li.odd .ctl-story-title,
+.section-project-roadmap .roadmap-bck .ctl_road_map_wrp li.odd .ctl-story-title a,
+.section-project-roadmap .roadmap-bck .ctl-popup-content h2,
+.section-project-roadmap .roadmap-bck .cool-timeline.white-timeline .timeline-post.even .timeline-meta .meta-details,
+.section-project-roadmap .roadmap-bck .ctl_road_map_wrp li.odd .ctl-story-year,
+.section-project-roadmap .roadmap-bck .ctl_road_map_wrp li.odd .ctl-story-title,
+.section-project-roadmap .roadmap-bck .ctl_road_map_wrp li.odd .ctl-story-title a,
+.section-project-roadmap .roadmap-bck .ctl-popup-content h2 {
+  display: none;
+}
+
+.section-project-roadmap .roadmap-bck .ctl-timeline-date {
+  color: #333333;
+}
+
+.section-project-roadmap .roadmap-bck .cool-timeline.white-timeline .timeline-post.odd .icon-dot-full,
+.section-project-roadmap .roadmap-bck .cool-timeline.one-sided.white-timeline .timeline-post .icon-dot-full,
+.section-project-roadmap .roadmap-bck .cool-timeline.white-timeline .timeline-post.even .icon-dot-full {
+  background: #0088FF;
+}
+
+.section-project-roadmap .roadmap-bck .cool-timeline.white-timeline .timeline-post.even .timeline-content .content-title,
+.section-project-roadmap .roadmap-bck .cool-timeline.white-timeline .timeline-post.odd .timeline-content .content-title {
+  color: #262626;
+}
+
+.section-consortium .consortium-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 670px) {
+  .section-consortium .consortium-logos {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.section-consortium .consortium-logos a {
+  margin-right: 65px;
+}
+
+@media screen and (max-width: 760px) {
+  .section-consortium .consortium-logos a {
+    margin-right: 25px;
+  }
+}
+/*# sourceMappingURL=front.css.map */

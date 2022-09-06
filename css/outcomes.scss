@@ -1,0 +1,61 @@
+@import "_variables_and_functions";
+@import "_utilities";
+
+
+h4 {
+    color: color(color02);
+    font-weight: bold;
+}
+
+.deliverable-boxes {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 430px) {
+        justify-content: center;
+    }
+    .deliverable-box-blue-area {
+        background-color: color(color03);
+        height: 328px;
+        width: 319px;
+        position: relative;
+        text-align: center;
+        margin-right: 12px;
+
+        @media screen and (max-width: 430px) {
+            width: 253px;
+            height: 254px;
+        }
+
+        .circle {
+            background-color: white;
+            width: 165px;
+            height: 165px;
+            border-radius: 100%;
+            display: inline-block;
+            text-align: center;
+            background-image: url(../images/eqafit-logo-outcomes.png);
+            background-repeat: no-repeat;
+            background-position: 58% 53%;
+
+            @media screen and (max-width: 430px) {
+                width: 254px;
+                height: 226px;
+                background-position: 50% 1%;
+            }
+        }
+        p {
+            color: color(color02);
+            font-weight: bold;
+            max-width: 228px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    a {
+        color: color(color01);
+        text-decoration: underline;
+    }
+}
