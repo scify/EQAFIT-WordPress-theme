@@ -192,25 +192,7 @@ if (defined('JETPACK__VERSION')) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-add_action('rest_api_init', function () {
-
-	add_filter('rest_pre_serve_request', initCors);
-
-	remove_filter('rest_pre_serve_request', 'rest_send_cors_headers');
-
-}, 15);
-
-
-function initCors($value)
-{
-	$origin = get_http_origin();
-	$allowed_origins = ['eqafit.org', 'localhost:5173'];
-
-	if ($origin && in_array($origin, $allowed_origins)) {
-		header('Access-Control-Allow-Origin: ' . esc_url_raw($origin));
-		header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
-		header('Access-Control-Allow-Credentials: true');
-	}
-
-	return $value;
+function add_cors_http_header(){
+    header("Access-Control-Allow-Origin: *");
 }
+add_action('init','add_cors_http_header');
