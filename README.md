@@ -97,7 +97,6 @@ So, we should create a `.env.production.local` file (which is already set not to
 ```bash
 #.env.production.local
 
-VITE_REST_API_AUTH_TOKEN=
 VITE_REST_API_AUTH_USERNAME=
 VITE_REST_API_AUTH_USERPASSWORD=
 
