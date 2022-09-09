@@ -1,0 +1,3 @@
+[submodule "EQAFIT-survey-tool"]
+	path = EQAFIT-survey-tool
+	url = git@github.com:scify/EQAFIT-survey-tool.git

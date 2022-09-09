@@ -118,3 +118,4 @@ httpdocs/wp-content/themes/twentyfifteen/
 
 # ignore node/grunt dependency directories
 node_modules/
+.idea

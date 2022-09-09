@@ -67,4 +67,42 @@ $ npm install
 
 Now you're ready to go! The next step is easy to say, but harder to do: make an awesome WordPress theme. :)
 
-Good luck!
+
+## Self-assessment tool
+
+This theme uses the self-assessment tool as a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+
+So, in order to pull the changes in the submodule, run:
+
+```bash
+git pull
+
+git submodule update --recursive --remote --merge
+
+cd eqafit-quiz-tool/
+
+npm install
+
+npm run build
+```
+
+These commands will pull and merge the changes, install any dependencies, build the submodule project, and prepare the `.js` and `.css` files.
+
+#### Setting the env variables for the self-assessment tool submodule
+
+Depending on the WordPress URL and the server configuration, we will need to "tell" to the self-assessment tool submodule where to locate the `data.json` file.
+
+So, we should create a `.env.production.local` file (which is already set not to be tracked by Git), with the following contents:
+
+```bash
+#.env.production.local
+
+VITE_REST_API_AUTH_TOKEN=
+VITE_REST_API_AUTH_USERNAME=
+VITE_REST_API_AUTH_USERPASSWORD=
+
+```
+
+(**Note** to set the variable appropriately, this was just an example!)
+
+Once you add the new `.env.*` file, you must run `npm run build` or `npm run serve` again.
